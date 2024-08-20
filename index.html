@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MINNRN AI Chat</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <main>
+    <h1>MINNRN AI Chat</h1>
+    <div class="chat-container">
+      <div id="chat-window">
+        <!-- Chat messages will appear here -->
+      </div>
+      <form id="chat-form">
+        <input type="text" id="user-input" placeholder="Type your message here..." autofocus />
+        <button type="submit">Send</button>
+      </form>
+      <div class="image-upload-container">
+        <label for="image-upload" class="image-upload-label">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4" />
+          </svg>
+          Upload Image
+        </label>
+        <input type="file" id="image-upload" accept="image/*" />
+      </div>
+    </div>
+  </main>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>

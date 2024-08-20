@@ -1,0 +1,92 @@
+body {
+  margin: 24px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  --accent-color: #076EFF;
+  color: #202124;
+}
+
+main {
+  width: 100%;
+  max-width: 460px;
+  margin: 0 auto;
+  padding: 24px;
+  border-radius: 20px;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #076EFF;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+}
+
+#chat-window {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  height: 300px;
+  overflow-y: auto;
+  margin-bottom: 10px;
+}
+
+#chat-form {
+  display: flex;
+}
+
+#user-input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 10px 0 0 10px;
+}
+
+#chat-form button {
+  padding: 10px 20px;
+  border: none;
+  background-color: #076EFF;
+  color: #fff;
+  border-radius: 0 10px 10px 0;
+  cursor: pointer;
+}
+
+.user-message {
+  text-align: right;
+  color: #000;
+}
+
+.ai-message {
+  text-align: left;
+  color: #076EFF;
+}
+
+.image-upload-container {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.image-upload-label {
+  display: inline-block;
+  padding: 10px;
+  border: 2px dashed #076EFF;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #076EFF;
+}
+
+.image-upload-label svg {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+#image-upload {
+  display: none;
+}
